@@ -1,0 +1,7 @@
+Name: Giselle Robinson        Proffesion: Accounting
+Gross Salary: 5600.00     Monthly Bonus: 5.00             Taxes: 30.00
+Net Salary: 168005.00
+Distance: 450.00 meters       Travel Time: 9.00 hours 
+Speed: 50.00
+Coffee Cups: 75.00             Price: 1.50
+Total Net Income: 112.50
