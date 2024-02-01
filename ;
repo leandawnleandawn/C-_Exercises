@@ -1,0 +1,43 @@
+#include <iostream>
+#include <cstdlib>
+#include <random>
+
+void displayRules();
+int main(){
+
+	enum Choices {ROCK, PAPER, SCISSORS};
+	int gameCount, player1Count, player2Count, gameWinner;
+	char response;
+
+	Choices player1;
+	Choices player2;
+
+
+	
+	do{
+		switch (response){
+			case 'P':
+				break;
+			case 'V':
+				break;
+			case 'q':
+				break;
+		}
+		system("cls");
+		std::cout << "***********************************" << '\n';
+		std::cout << "      ROCK, PAPER, SCISSORS        " << '\n';
+		std::cout << "      [P] To Play                  " << '\n';
+		std::cout << "      [V] To View Rules            " << '\n';
+		std::cout << "      [q] to Quit                  " << '\n';
+		std::cout << "***********************************" << '\n';
+	}while(std::cin >> response); 
+
+
+	return 0;
+}
+
+
+void displayRules(){
+
+
+}
