@@ -8,7 +8,7 @@ class romanType{
 
 	public:
 		void setRomanNumeral(std::string numeral);
-		void setRomanInteger(std::string numeral);
+		void setRomanInteger();
 		std::string getRomanNumeral();
 		int getRomanInteger();
 };
@@ -18,8 +18,8 @@ int main () {
 
 	romanType romanic;
 	romanic.setRomanNumeral("MCCXI");
+	romanic.setRomanInteger();
 	std::cout << romanic.getRomanInteger() << std::endl;
-	
 	return 0;
 }
 
@@ -35,10 +35,10 @@ void romanType::setRomanNumeral(std::string numeral){
 	romanNumeral = numeral;
 }
 
-void romanType::setRomanInteger(std::string numeral){
-		int convertednumeral;
+void romanType::setRomanInteger(){
+		int convertednumeral = 0;
 
-	for(char i: numeral){
+	for(char i: romanNumeral){
 		switch (i)
 		{
 		case 'M':
@@ -62,7 +62,7 @@ void romanType::setRomanInteger(std::string numeral){
 		case 'I':
 			convertednumeral += 1;
 			break;
-		default:
+		default: 
 			break;
 		}
 	}
